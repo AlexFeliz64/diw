@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nombre del autor" />
+    <meta name="description" content="Estructura de un documento HTML5" />
+    <link rel="stylesheet" href="html0502.css" />
+    <title>Ejercicio html0502</title>
+  </head>
+  <body>
+    <!-- Panel de navegación a la izquierda -->
+    <nav>
+      <h1>Menú de Navegación</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#ubicacion">Ubicacion</a></li>
+      </ul>
+    </nav>
+
+    <!-- Área principal del documento -->
+    <main>
+      <h1 style="font-size: 50px">Bienvenido</h1>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/4145tmfSfiL.png"
+              alt="Imagen 1"
+            />
+          </td>
+          <td>
+            Marca es un diario español de información deportiva, con sede en
+            Madrid. Fundado en 1938, posee una tirada media de 413 252
+            ejemplares diarios y un promedio de difusión de 287 641 ejemplares
+            (datos oficiales de la OJD).3​ Es el periódico de pago más leído en
+            España con 1 355 000 seguidores diarios en 2020, según el EGM.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Marca posee su propia edición digital en internet desde el 3 de
+            marzo de 1997, una de las webs de deportes más visitada de España.
+            Del mismo modo, estrenó el 1 de febrero de 2001 su emisora de radio,
+            Radio Marca, la primera radio exclusivamente deportiva de cobertura
+            nacional.
+          </td>
+          <td>
+            <img
+              src="https://wiki.elika.eus/images/3/38/Deporte.png"
+              alt="Imagen 2"
+            />
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- Información relacionada -->
+    <aside>
+      <h2>Iniciar Sesión</h2>
+      <form action="/login" method="post">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="submit" value="Iniciar Sesión" />
+      </form>
+    </aside>
+  </body>
+</html>

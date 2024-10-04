@@ -1,0 +1,83 @@
+#info{
+    background-color: white;
+    font-family: Poppins;
+    color: #2c2929;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#info2 {
+    background-color: rgb(221, 221, 221);
+    font-family: Poppins;
+    color: #2c2929;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#info3 {
+    background-color: white;
+    font-family: Poppins;
+    color: #2c2929;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.titulo{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+.introduccion{
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+#aviso{
+    color:white;
+    font-family: Poppins;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    
+}
+#aviso span{
+    font-size: 400%;
+}
+#aviso a{
+    color: white;
+}
+#avisomal{
+    background-color: #d84949;
+    padding: 5%;
+    margin-top: 15%;
+    font-size: 100%;
+    color:black;
+}
+#volver{
+    padding: 10px;
+    background-color: orange;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Poppins;
+    transition: background-color 0.5s;
+    color: black;
+    margin-top: 5%;
+}
+#volver:hover{
+    color: white;
+    background-color: #292929;
+}
+#info a{
+    font-size: 110%;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #292929;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Poppins;
+    transition: background-color 0.5s;
+}
+#info a:hover{
+    color: #292929;
+    background-color: orange;
+}

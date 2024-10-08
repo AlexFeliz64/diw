@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        header, footer, nav {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: lightgreen;
+        }
+
+        .container {
+            display: flex;
+            background-color: blue;
+            padding: 5em;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+        }
+
+        article {
+            text-align: center;
+            border: 5px black solid;
+            background-color: orange;
+            width: 33%; 
+            
+            padding: 2px; 
+        }
+        
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>Esto es el HEADER</header>
+    <nav>Esto es el NAV</nav>
+
+    <div class="container">
+        <article>
+            <h2>Article 1</h2>
+            <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg">
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg">
+        </article>
+        <article>
+            <h2>Article 3</h2>
+            <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg">
+        </article>
+    </div>
+
+    <footer>Esto es un FOOTER</footer>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Blade.inc</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const htmlElement = document.documentElement;
+        const switchElement = document.getElementById("darkModeSwitch");
+
+        // Set the default theme to dark if no setting is found in local storage
+        const currentTheme = localStorage.getItem("bsTheme") || "dark";
+        htmlElement.setAttribute("data-bs-theme", currentTheme);
+        switchElement.checked = currentTheme === "dark";
+
+        switchElement.addEventListener("change", function () {
+          if (this.checked) {
+            htmlElement.setAttribute("data-bs-theme", "dark");
+            localStorage.setItem("bsTheme", "dark");
+          } else {
+            htmlElement.setAttribute("data-bs-theme", "light");
+            localStorage.setItem("bsTheme", "light");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="p-3 text-bg-secondary">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-content-center justify-content-between"
+        >
+          <ul class="nav">
+            <li>
+              <a href="#" class="nav-link px-2 text-white fs-5">
+                <img
+                  src="https://images.vexels.com/media/users/3/137052/isolated/preview/1d54d604a84bdade71710419487fd7ee-icono-redondo-de-aspiradora.png"
+                  alt="Icono aspiradora"
+                  width="100"
+                  height="100"
+                  style="margin: -20px"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="btn btn-info m-2" aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-info m-2" aria-current="page"
+                >Documentación</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-info m-2" aria-current="page"
+                >Precios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-info m-2" aria-current="page"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item">
+              <!-- Bootstrap 5 switch -->
+              <div class="form-check form-switch m-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="darkModeSwitch"
+                />
+                <label class="form-check-label" for="darkModeSwitch"
+                  >Dark Mode</label
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div
+      class="text-center bg-image"
+      style="
+        background-image: url('https://img.freepik.com/fotos-premium/aspiradora-robot-impulsada-ia-limpia-pisos-esfuerzo-haciendo-que-polvo-desaparezca-manera-futurista-concept-robot-vacuums-inteligencia-artificial-tecnologia-limpieza-innovaciones-dispositivos-hogar-inteligentes-gadgets-hogar_918839-35081.jpg');
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+      "
+    >
+      <div
+        class="mask d-flex justify-content-center align-items-center"
+        style="background-color: rgba(0, 0, 0, 0.6); height: 100%"
+      >
+        <div class="text-white text-center">
+          <h1 class="mb-3 fw-bold">Blade</h1>
+          <h4 class="mb-3 text-uppercase">Más cerca de una limpieza segura</h4>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container p-5"></div>
+      <div class="container px-5 py-5">
+        <div
+          class="row g-5 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center"
+        >
+          <!-- Primera sección: Características de la aspiradora robot -->
+          <div
+            class="col m-1 border border-1 rounded rounded-3 d-flex align-items-center justify-content-center"
+          >
+            <div class="text-center">
+              <i class="bi bi-gear fs-2"></i>
+              <h5 class="text-body-emphasis">Características Avanzadas</h5>
+              <p>
+                Equipadas con tecnología de navegación inteligente, nuestras
+                aspiradoras robots pueden mapear tu hogar y limpiar cada rincón
+                con precisión.
+              </p>
+              <a href="#" class="btn btn-primary mb-2"
+                >Ver más características</a
+              >
+            </div>
+          </div>
+
+          <!-- Segunda sección: Ventajas de usar la aspiradora robot -->
+          <div
+            class="col m-1 border border-1 rounded rounded-3 d-flex align-items-center justify-content-center"
+          >
+            <div class="text-center">
+              <i class="bi bi-person-check fs-2"></i>
+              <h5 class="text-body-emphasis">Ventajas para ti</h5>
+              <p>
+                Ahorra tiempo y esfuerzo con un sistema de limpieza autónomo que
+                mantiene tu hogar impecable sin que tengas que mover un dedo.
+              </p>
+              <a href="#" class="btn btn-primary mb-2">Descubre más</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row g-5 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center"
+        >
+          <!-- Tercera sección: Beneficios de la aspiradora robot -->
+          <div
+            class="col m-1 border border-1 rounded rounded-3 d-flex align-items-center justify-content-center"
+          >
+            <div class="text-center">
+              <i class="bi bi-battery-full fs-2"></i>
+              <h5 class="text-body-emphasis">Autonomía y Eficiencia</h5>
+              <p>
+                Con baterías de larga duración, la aspiradora puede limpiar
+                durante horas y volver automáticamente a su base para
+                recargarse.
+              </p>
+              <a href="#" class="btn btn-primary mb-2">Ver detalles</a>
+            </div>
+          </div>
+
+          <!-- Cuarta sección: Seguridad y protección -->
+          <div
+            class="col m-1 border border-1 rounded rounded-3 d-flex align-items-center justify-content-center"
+          >
+            <div class="text-center">
+              <i class="bi bi-shield-lock fs-2"></i>
+              <h5 class="text-body-emphasis">Protección avanzada</h5>
+              <p>
+                Cuenta con sensores que evitan caídas y protegen tus muebles y
+                objetos mientras realiza su trabajo con máxima eficiencia.
+              </p>
+              <a href="#" class="btn btn-primary mb-2">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg bg-opacity-25 bg-secondary rounded rounded-5 m-5">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://i.blogs.es/809cb3/portada/450_1000.jpeg"
+                class="d-block w-75 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://s1.elespanol.com/2024/01/18/omicrono/hardware/825927928_239226235_1706x960.jpg"
+                class="d-block w-75 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://i.ytimg.com/vi/lT8h78kNE0Y/maxresdefault.jpg"
+                class="d-block w-75 mx-auto"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev carousel-dark"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next carousel-dark"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <section class="intro">
+        <div class="mask d-flex align-items-center h-100 gradient-custom">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card">
+                  <div class="card-body p-4 p-md-5">
+                    <h3 class="mb-4 pb-2">Formulario de Registro</h3>
+                    <form action="">
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input
+                              type="text"
+                              id="firstName"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="firstName"
+                              >Nombre</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input
+                              type="text"
+                              id="lastName"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="lastName"
+                              >Apellido</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline datepicker">
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="birthdayDate"
+                            />
+
+                            <label for="birthdayDate" class="form-label"
+                              >Fecha de Nacimiento
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <h6 class="mb-2 pb-1">Genero:</h6>
+
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="inlineRadioOptions"
+                              id="femaleGender"
+                              value="option1"
+                            />
+                            <label class="form-check-label" for="femaleGender"
+                              >Mujer</label
+                            >
+                          </div>
+
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="inlineRadioOptions"
+                              id="maleGender"
+                              value="option2"
+                            />
+                            <label class="form-check-label" for="maleGender"
+                              >Hombre</label
+                            >
+                          </div>
+
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="inlineRadioOptions"
+                              id="otherGender"
+                              value="option3"
+                            />
+                            <label class="form-check-label" for="otherGender"
+                              >Mobilirio</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="mt-4">
+                              <input
+                                class="btn btn-warning btn-lg"
+                                type="submit"
+                                value="Enviar"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="p-3 mt-5 bg-secondary">
+      <p class="text-center text-white">© 2024 Blade</p>
+      <div class="text-center text-white">
+        <i class="bi bi-facebook fs-4"></i>
+        <i class="bi bi-instagram fs-4"></i>
+        <i class="bi bi-twitter-x fs-4"></i>
+      </div>
+    </footer>
+  </body>
+</html>

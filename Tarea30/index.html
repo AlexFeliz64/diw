@@ -5,36 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        .container{
+        .container {
             display: grid;
-            grid-gap: 12px;
-            grid-template-columns: repeat(6, 100px);
-
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(4, 40px);
+            gap: 10px;
+            width: 300px;
         }
-        .bloque{
+
+        .container div {
             background-color: grey;
             color: white;
-            padding: 40px;
-            font-size: 200%;
-            border-radius: 5px;
+            font-size: 150%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
+        
+        .bloque1 { 
+            grid-column: 1 / 2; 
+            grid-row: 1 / 4; 
+        }
+        .bloque2 { 
+            grid-column: 2 / 3; 
+            grid-row: 1 / 2; 
+        }
+        .bloque3 { 
+            grid-column: 3 / 4; 
+            grid-row: 1 / 3; 
+        }
+        .bloque4 { 
+            grid-column: 1 / 2; 
+            grid-row: 4 / 6; 
+        }
+        .bloque5 { 
+            grid-column: 2 / 3; 
+            grid-row: 2 / 4; 
+        }
+        .bloque6 { 
+            grid-column: 3 / 4; 
+            grid-row: 3 / 3; 
+        }
+        .bloque7 { 
+            grid-column: 1 / 2; 
+            grid-row: 6 / 8; 
+        }
+        .bloque8 { 
+            grid-column: 2 / 3; 
+            grid-row: 4 / 8; 
+        }
+        .bloque9 { 
+            grid-column: 3 / 4; 
+            grid-row: 4 / 14; 
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="bloque">1</div>
-        <div class="bloque">2</div>
-        <div class="bloque">3</div>
-        <div class="bloque">4</div>
-        <div class="bloque">5</div>
-        <div class="bloque">6</div>
-        <div class="bloque">7</div>
-        <div class="bloque">8</div>
-        <div class="bloque">9</div>
-        <div class="bloque">10</div>
-        <div class="bloque">11</div>
-        <div class="bloque">12</div>
+        <div class="bloque1">1</div>
+        <!-- <div class="bloque2">2</div>
+        <div class="bloque3">3</div> -->
+        <div class="bloque4">4</div>
+        <!-- <div class="bloque5">5</div>
+        <div class="bloque6">6</div> -->
+        <div class="bloque7">7</div>
+        <!-- <div class="bloque8">8</div>
+        <div class="bloque9">9</div> -->
     </div>
 </body>
 </html>

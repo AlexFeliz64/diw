@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Adaptable a impresión</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        @media screen {
+            header {
+                background-color: #ffe4e1;
+                color: #4b0082;
+                text-align: left;
+                padding: 2em;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+            nav ul {
+                list-style-type: square;
+                padding: 0;
+            }
+            nav ul li {
+                margin-bottom: 0.5em;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: #4b0082;
+                font-weight: bold;
+            }
+            main {
+                background-color: #fff8dc;
+                padding: 2em;
+            }
+            main .content {
+                text-align: center;
+                font-style: italic;
+            }
+            footer {
+                background-color: #faebd7;
+                color: #2f4f4f;
+                padding: 1em;
+                text-align: left;
+                border-top: 2px solid #4b0082;
+            }
+        }
+
+        @media print {
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 10pt;
+                color: #000;
+            }
+            header {
+                background-color: #000;
+                color: #fff;
+                padding: 1em;
+                text-align: center;
+            }
+            nav {
+                display: none;
+            }
+            main {
+                background: none;
+                margin: 0;
+                padding: 0;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+            }
+            main .content {
+                padding: 2em;
+                text-align: justify;
+            }
+            footer {
+                text-align: center;
+                font-size: 8pt;
+                margin-top: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MoviesAlecs</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Bienvenido a MoviesAlecs</h2>
+            <p>Descubre las mejores películas desde la comodidad de tu hogar.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 MoviesAlecs - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

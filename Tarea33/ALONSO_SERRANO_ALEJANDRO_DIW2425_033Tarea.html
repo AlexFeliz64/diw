@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro">
+    <meta name="description" content="MoviesAlecs es una página de películas donde puedes descubrir lo mejor del cine.">
+    <meta name="robots" content="index">
+    <title>MoviesAlecs - Página de Películas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 60em;
+        }
+        
+        header {
+            background-color: #202020;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        
+        .movie {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .movie img {
+            width: 300px;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .movie {
+                width: 80%;
+            }
+            footer {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+        
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        
+            .movie {
+                width: 90%;
+            }
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MoviesAlecs</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contendor">
+        <div class="movie">
+            <img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2024/7/w780/9TFSqghEHrlBMRR63yTx80Orxva.jpg">
+            <h2>Deadpool y Lobezno</h2>
+            <p>Un apático Wade Wilson se afana en la vida civil tras dejar atrás sus días como Deadpool, un mercenario moralmente flexible. Pero cuando su mundo natal se enfrenta a una amenaza existencial, Wade debe volver a vestirse a regañadientes con un Lobezno aún más reacio a ayudar. </p>
+        </div>
+        <div class="movie">
+            <img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2024/4/w780/tkdc73JiPVvzngSpbLEIfFNjll1.jpg">
+            <h2>Garfield: La película</h2>
+            <p>El mundialmente famoso Garfield, el gato casero que odia los lunes y que adora la lasaña, está a punto de vivir una aventura ¡en el salvaje mundo exterior! Tras una inesperada reunión con su largamente perdido padre – el desaliñado gato callejero Vic – Garfield y su amigo canino Odie se ven forzados a abandonar sus perfectas y consentidas vidas al unirse a Vic en un hilarante y muy arriesgado atraco. </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MoviesAlecs. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

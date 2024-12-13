@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura HTML</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+      
+    header {
+        background-color: #f4b183;
+        text-align: center;
+        padding: 1em;
+    }
+      
+    nav {
+        background-color: #bdd7ee;
+        float: left;
+        width: 20%;
+        padding: 1em;
+        height: 300px; 
+    }
+      
+    .section1{
+        background-color: #a8a8a8;
+        padding: 5%;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(5, 100px);
+        grid-auto-rows: minmax(100px, auto);
+        grid-auto-flow: column;
+        
+    }
+
+    article{
+        background-color: #00ffff;
+        grid-column: 5 / 7;
+        grid-row: 1 / 3;
+    }
+
+    .aside1{
+        grid-column: 7;
+    }
+
+    .aside2{
+        grid-column: 7;
+    }
+
+    aside{
+        background-color: #ff0000;
+        
+    }
+    .section2{
+        background-color: #808080;
+        padding: 10%;
+    }
+
+    .aside3{
+      position: absolute;
+      margin-left: 45% ;
+      padding-top: 5%;
+      padding-left: 20%;
+    }
+
+    .main-content {
+        float: right;
+        width: 80%;
+        padding: 1em;
+    }
+    
+    footer {
+        clear: both;
+        background-color: #c6e0b4;
+        text-align: center;
+        padding: 1em;
+    }
+      
+  </style>
+</head>
+<body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <nav>
+      <p>Navigation</p>
+    </nav>
+    <div class="main-content">
+      <section class="section1">
+        <article>
+          <p>Article</p>
+        </article>
+        <aside class="aside1">
+          <p>Aside 1</p>
+        </aside>
+        <aside class="aside2">
+          <p>Aside 2</p>
+        </aside>
+      </section>
+      <section class="section2">
+        <aside class="aside3">
+          <p>Aside 3</p>
+        </aside>
+      </section>
+    </div>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
